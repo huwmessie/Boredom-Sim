@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1680
     height: 877
-  m_MinSize: {x: 681, y: 498}
-  m_MaxSize: {x: 14004, y: 14048}
+  m_MinSize: {x: 683, y: 348}
+  m_MaxSize: {x: 12008, y: 8048}
   vertical: 0
-  controlID: 100
+  controlID: 71
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1276
     height: 877
-  m_MinSize: {x: 404, y: 498}
-  m_MaxSize: {x: 10002, y: 14048}
+  m_MinSize: {x: 406, y: 348}
+  m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
-  controlID: 101
+  controlID: 72
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1276
     height: 603
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 102
+  controlID: 73
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,8 +184,8 @@ MonoBehaviour:
     y: 0
     width: 325
     height: 603
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -238,14 +238,14 @@ MonoBehaviour:
     y: 603
     width: 1276
     height: 274
-  m_MinSize: {x: 232, y: 274}
-  m_MaxSize: {x: 10002, y: 10024}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 102, y: 124}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 12}
-  m_Selected: 0
+  m_Selected: 1
   m_LastSelected: 2
 --- !u!114 &11
 MonoBehaviour:
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -64460
+  m_LastSelectedObjectID: -2526
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -363,13 +363,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.18081756, y: 0.40420407, z: -0.08185619, w: -0.8928738}
+    m_Target: {x: 0.23031752, y: -0.05689345, z: 0.013493284, w: 0.9713573}
     speed: 2
-    m_Value: {x: -0.18081756, y: 0.40420407, z: -0.08185619, w: -0.8928738}
+    m_Value: {x: 0.23031752, y: -0.05689345, z: 0.013493284, w: 0.9713573}
   m_Size:
-    m_Target: 10
+    m_Target: 13.787585
     speed: 2
-    m_Value: 10
+    m_Value: 13.787585
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -410,9 +410,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e0edffff
-      m_LastClickedID: -4640
-      m_ExpandedIDs: def0ffff
+      m_SelectedIDs: 22f6ffff
+      m_LastClickedID: -2526
+      m_ExpandedIDs: c2f3ffff22f6ffffd6fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -580,20 +580,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models/pencil.fbx
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models/pencil.fbx
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/huwmessie/Documents/Unity/Boredom-Sim/BS
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d0300000
-    m_LastClickedID: 12496
-    m_ExpandedIDs: 00000000082e0000d830000000ca9a3b
+    m_SelectedIDs: 58090000
+    m_LastClickedID: 2392
+    m_ExpandedIDs: 0000000058090000940a0000680b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -621,7 +621,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000058090000940a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -646,8 +646,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 22f6ffff
+    m_LastClickedInstanceID: -2526
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000072300000e4e900009623010008410000f040000044400000ce400000bc400000b247000074540000785e00008e5e00004a5f00009a160000304c00001c4d0000126e0100a60d0000
     m_RenameOverlay:
