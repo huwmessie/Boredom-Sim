@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{6C6CB2C0-7088-CEDB-AB9A-05E1DEAD4C18}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Fold.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SoftBody.cs">
     <Files>
       <File FileName="Assets/Scripts/Fold.cs" Line="1" Column="1" />
+      <File FileName="Assets/SoftBody.cs" Line="880" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -60,29 +60,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexActorEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexArrayActorEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexArrayAssetEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexAssetEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexClothActorEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexClothAssetEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexClothDeformationEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexContainerEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexFluidMaterialEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexFluidRendererEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSoftActorEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSoftAssetEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSoftSkinningEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSolidActorEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSolidAssetEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSourceActorEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSourceAssetEditor.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexActorTests.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexAssetTests.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexExtTests.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexTests.cs" />
-    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexUtilsTests.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioImportPostProcessor.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\AudioManagerInspector.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\MinMaxPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\MixerSnapshotPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\OSPPropsPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\SoundFXPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\Editor\SoundFXRefPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Utils\Editor\DrawerInspectorNote.cs" />
+    <Compile Include="Assets\Oculus\Avatar\Editor\AvatarMaterialEditor.cs" />
+    <Compile Include="Assets\Oculus\LipSync\Editor\OVRLipSyncTool.cs" />
+    <Compile Include="Assets\Oculus\LipSync\Editor\OVRNamedArrayPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\Platform\Editor\GUIHelper.cs" />
+    <Compile Include="Assets\Oculus\Platform\Editor\OculusPlatformSettingsEditor.cs" />
+    <Compile Include="Assets\Oculus\Platform\Editor\OculusPluginUpdaterStub.cs" />
+    <Compile Include="Assets\Oculus\Platform\Editor\OculusStandalonePlatformResponse.cs" />
+    <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\Editor\TeleportTransitionWarpInspector.cs" />
+    <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
+    <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
+    <Compile Include="Assets\Oculus\Spatializer\Editor\ONSPAudioSourceEditor.cs" />
+    <Compile Include="Assets\Oculus\Spatializer\Editor\ONSPPropagationGeometryEditor.cs" />
+    <Compile Include="Assets\Oculus\Spatializer\Editor\ONSPPropagationMaterialEditor.cs" />
+    <Compile Include="Assets\Oculus\Spatializer\Editor\ONSPReflectionCustomGUI.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/huwmessie/Documents/Unity/Boredom-Sim/BS/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -709,6 +708,18 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{6C6CB2C0-7088-CEDB-AB9A-05E1DEAD4C18}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.Editor.csproj">
+      <Project>{232F24F9-744E-09E9-61DA-1413D64BF4C8}</Project>
+      <Name>Oculus.VR.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
+      <Project>{2777A654-5A14-D1B0-27E4-F6A096CC0CDB}</Project>
+      <Name>Oculus.VR.Scripts.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.csproj">
+      <Project>{00B84A18-8EDA-D55B-3FEA-AAC2603D81E0}</Project>
+      <Name>Oculus.VR</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
