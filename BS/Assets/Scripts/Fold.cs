@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class Fold : MonoBehaviour
 {
@@ -9,11 +10,16 @@ public class Fold : MonoBehaviour
     float dist;
     float ori = 0;
 
+    bool held = false;
+    float prevX;
+    float curX;
+
     // Start is called before the first frame update
     void Start()
     {
         mouseXCur = Input.mousePosition.x;
     }
+
 
     // Update is called once per frame
     void Update()
