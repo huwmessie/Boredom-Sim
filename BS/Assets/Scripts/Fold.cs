@@ -8,6 +8,8 @@ public class Fold : MonoBehaviour
     float mouseXCur;
     float dist;
     float ori = 0;
+    // TODO: make paperHover responsive to mouse position
+    bool paperHover = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,7 @@ public class Fold : MonoBehaviour
         mouseXPrev = mouseXCur;
         mouseXCur = Input.mousePosition.x;
         dist = mouseXCur - mouseXPrev;
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)&& paperHover)
         {
             Vector3 rot = new Vector3(0, 0, -dist);
             ori += dist;

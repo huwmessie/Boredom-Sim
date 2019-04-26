@@ -1,7 +1,15 @@
 ﻿<Properties StartupConfiguration="{6C6CB2C0-7088-CEDB-AB9A-05E1DEAD4C18}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Fold.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GrabandThrow.cs">
     <Files>
-      <File FileName="Assets/Fold.cs" Line="25" Column="46" />
+      <File FileName="Assets/Scripts/Fold.cs" Line="22" Column="6" />
+      <File FileName="Assets/Scripts/GrabandThrow.cs" Line="28" Column="10" />
+      <File FileName="Assets/Scripts/Controller.cs" Line="20" Column="16" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="3" Column="19" />
+      <File FileName="Assets/Scripts/Throwable.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/Glider.cs" Line="34" Column="10" />
+      <File FileName="Assets/Breakable Windows/Scripts/BreakableWindow.cs" Line="23" Column="29" />
+      <File FileName="Assets/CrepuscularRays/Crepuscular.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/BasicCamera.cs" Line="8" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
