@@ -23,7 +23,7 @@ public class SpringAction : MonoBehaviour
         if (bindWhenClose)
         {
             offset = transform.position - target.position;
-            offset *= 0.85f;
+            offset *= 0.65f;
             transform.position = target.position + offset;
             if (offset.magnitude < 0.02)
             {

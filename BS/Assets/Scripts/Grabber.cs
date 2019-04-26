@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Animations;
 using Valve.VR;
 
 public class Grabber : MonoBehaviour
@@ -15,13 +14,14 @@ public class Grabber : MonoBehaviour
 
     public SteamVR_Input_Sources InputSource;
 
-    ConstraintSource ConstSrc = new ConstraintSource();
+    public GameObject MotionSource;
+
+    private Rigidbody rb;
 
     private void Start()
     {
         m_ActionSet.Activate(SteamVR_Input_Sources.Any, 0, true);
-        ConstSrc.sourceTransform = transform;
-        ConstSrc.weight = 1;
+        rb = MotionSource.GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -40,7 +40,9 @@ public class Grabber : MonoBehaviour
             {
                 UnconstrainFromSource(obj);
             }
+            currentHoldings = new List<GameObject>();
         }
+
     }
 
     void OnCollisionEnter(Collision col)
@@ -59,24 +61,22 @@ public class Grabber : MonoBehaviour
 
     void ConstrainToSource(GameObject obj)
     {
-        ParentConstraint pc = obj.GetComponent<ParentConstraint>();
-        if (pc != null)
+        if (obj.GetComponent<FixedJoint>() == null &&
+            obj.GetComponent<Rigidbody>() != null)
         {
+            FixedJoint fj = obj.AddComponent<FixedJoint>() as FixedJoint;
+            fj.breakForce = 2000;
+            fj.breakTorque = 2000;
+            fj.connectedBody = rb;
+            Vector3 posOffset = obj.transform.position - transform.position;
+            Vector3 rotOffset = obj.transform.forward - transform.forward;
             currentHoldings.Add(obj);
-            pc.AddSource(ConstSrc);
-            pc.constraintActive = true;
         }
+        
     }
 
     void UnconstrainFromSource(GameObject obj)
     {
-        ParentConstraint pc = obj.GetComponent<ParentConstraint>();
-        for (int i=0; i<pc.sourceCount; i++)
-        {
-            if (pc.GetSource(i).sourceTransform == ConstSrc.sourceTransform)
-            {
-                pc.RemoveSource(i);
-            }
-        }
+        Destroy(obj.GetComponent<FixedJoint>());
     }
 }
