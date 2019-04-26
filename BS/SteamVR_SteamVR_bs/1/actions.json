@@ -1,0 +1,26 @@
+{
+  "actions": [
+    {
+      "name": "/actions/Main/in/Pose",
+      "type": "pose"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/Main",
+      "usage": "single"
+    }
+  ],
+  "default_bindings": [
+    {
+      "controller_type": "vive_controller",
+      "binding_url": "application_generated_unity_bs_exe_binding_vive_controller.json"
+    }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US",
+      "/actions/Main/in/Pose": "/actions/Main/in/Pose"
+    }
+  ]
+}

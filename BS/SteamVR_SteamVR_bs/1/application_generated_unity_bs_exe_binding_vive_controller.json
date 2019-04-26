@@ -1,0 +1,22 @@
+{
+  
+  "bindings": {
+    "/actions/main": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    },
+    "/actions/pages": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    }
+  },
+  "controller_type": "vive_controller",
+  "description": "",
+  "name": "My BS [Testing] configuration for Vive Controller"
+}
